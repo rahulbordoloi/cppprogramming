@@ -1,11 +1,9 @@
 #include<bits/stdc++.h>
-
 #define f(i,a,b) for(i=a;i<b;i++)
 
 using namespace std;
 
 int i=0,j=0;
-
 void sor(int v[100],int n, int s)
 {
     int k=1,c=1;
@@ -52,9 +50,8 @@ main()
 {
     int tc;
     cin>>tc;
-    while(tc>0)
+    while(tc--)
     {
-        tc--;
         int n,s;
         cin>>n>>s;
         int v[n];

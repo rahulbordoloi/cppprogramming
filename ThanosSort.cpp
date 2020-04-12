@@ -1,42 +1,76 @@
-#include<bits/stdc++.h>
-#define fast ios_base::sync_with_stdio(0);cin.tie(NULL);cout.tie(NULL)
-#define f(i,a,b) for(i=a;i<b;i++)
-#define fr(i,a,b) for(i=a;i>=b;i--)
-#define endl '\n'
-#define ll long long int
-#define ff first
-#define ss second
-#define pb push_back
-#define mp make_pair
-#define mod 1000000007
+#include<iostream>
 using namespace std;
 
-int ar[100],mx=1;
+int i;
 
-int Sort(int l, int r)
+void ThanosS(int a[],int n)
 {
-	if(l+1==r)
-	{
-		if(ar[l]<=ar[r])
-			return 2;
-		return -1;
-	}
-
-	int mid=(l+r)/2;
-	int x=Sort(l,mid);
-	int y=Sort(mid+1,r);
-	mx=max(mx,max(x,y));
-	if(x>0 and y>0 and ar[mid]<=ar[mid+1])
-		mx=x+y;
-	return -1;
+    int c=1,flag=0,j;
+    if(n >= 1)
+    {
+        for(i=0;i<n;i++)
+        {
+            for(j=1;j<n;j++)
+            {
+                if(a[i] <= a[j])
+                {
+                    c++;
+                }
+                else
+                {
+                    flag=1;
+                    n/=2;
+                    break;
+                }
+            }
+        }
+    }
+    if(flag==1 && n > 1)
+    {
+        ThanosS(a,n);
+    }
+    cout<<"\n"<<c;
 }
 
-int main()
+bool isPower(int x, long int y) 
+{ 
+    if (x == 1) 
+        return (y == 1); 
+    long int pow = 1; 
+    while (pow < y) 
+        pow *= x;
+    return (pow == y); 
+} 
+/*bool isPower(int x, int y) 
+{ 
+    // logarithm function to calculate value 
+    int res1 = log(y) / log(x); 
+    double res2 = log(y) / log(x); // Note : this is double 
+  
+    // compare to the result1 or result2 both are equal 
+    return (res1 == res2); 
+}*/ 
+
+main()
 {
-	int n,i,x;
-	cin>>n;
-	f(i,0,n)
-		cin>>ar[i];
-	x=Sort(0,n-1);
-	cout<<mx;
+    int a[100],n,x;
+    cin>>n;
+    x=isPower(2,n);
+    if(x==1)
+    {
+        for(i=0;i<n;i++)
+        {
+            cin>>a[i];
+        }
+        ThanosS(a,n);
+        /*for(i=0;i<n;i++)
+        {
+            cout<<a[i]<<"\t";
+        }*/
+    }
+    /*else
+    {
+        cout<<"\nNo. of Elements are not in an order of 2\n";
+    }*/
+    
 }
