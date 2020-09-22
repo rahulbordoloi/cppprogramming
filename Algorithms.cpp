@@ -16,7 +16,7 @@
 
 using namespace std;
 
-void print(vector<ll>& a, char sep = ' ')
+void print(vector<ll>& a, char sep)
 {
     for(auto i : a) { cout<<i<<sep; }
 }
@@ -34,7 +34,7 @@ bool compare(ll x, ll y)
 int main()
 {
     // Code to Remove Spaces in Between
-    
+
     /*
     string s = "R  ah u l Bord     oloi";
     cout<<s<<endl;
@@ -45,16 +45,25 @@ int main()
     cout<<s;
     */
 
-   // Append Repeatation of a String by its Frequency
+    // Append Repeatation of a String by its Frequency
    
-   /*
-   string s = "R7h9L5";8+ hona 
-   string answer;
-   fi(i, 0, s.size(), 2){
+    /*
+    string s = "R7h9L5";8+ hona 
+    string answer;
+    fi(i, 0, s.size(), 2){
        answer.insert(answer.end(), (int)(s[i + 1] - '0'), s[i]);
-   }
-   cout<<z;
+    }
+    cout<<z;
+    */
+
+   // Multiplying a Scaler to the Whole Vector [Using Lambda Function]
+
+   /*
+   vector<ll> array {1, 2, 3, 4, 5};
+   ll constant{300};
+   transform(array.begin(), array.end(), array.begin(), [&constant](auto& c) {return c * constant;} );
+   print(array, sp);
    */
-   
+
    return 0;
 }
