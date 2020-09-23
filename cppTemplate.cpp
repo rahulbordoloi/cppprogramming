@@ -23,7 +23,7 @@ void print(vector<ll>& a, char sep = ' ')
 
 ll mod_opr(ll num)
 {
-    return num % mod;
+    return (num + mod) % mod;
 }
 
 bool compare(ll x, ll y)
@@ -33,8 +33,8 @@ bool compare(ll x, ll y)
 
 int main()
 {
-    
-    cout<<"Hello World"<<endl;
+    fast;
+    cout<<"Hello World_"<<endl;
     return 0;
     
 }
