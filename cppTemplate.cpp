@@ -28,7 +28,7 @@ ll mod_opr(ll num)
 }
 
 template <typename T>
-bool compare(<T> x, <T> y)
+bool compare(T x, T y)
 {
     return x > y ? true : false;
 }
