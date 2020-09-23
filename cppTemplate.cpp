@@ -16,7 +16,8 @@
 
 using namespace std;
 
-void print(vector<ll>& a, char sep = ' ')
+template <typename T>
+void print(vector<T>& a, char sep = ' ')
 {
     for(auto i : a) { cout<<i<<sep; }
 }
@@ -26,7 +27,8 @@ ll mod_opr(ll num)
     return (num + mod) % mod;
 }
 
-bool compare(ll x, ll y)
+template <typename T>
+bool compare(<T> x, <T> y)
 {
     return x > y ? true : false;
 }
@@ -34,7 +36,7 @@ bool compare(ll x, ll y)
 int main()
 {
     fast;
-    cout<<"Hello World_"<<endl;
+    cout<<"Hello World"<<endl;
     return 0;
     
 }
