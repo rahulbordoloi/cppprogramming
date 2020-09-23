@@ -16,7 +16,8 @@
 
 using namespace std;
 
-void print(vector<ll>& a, char sep)
+template <typename T>
+void print(vector<T>& a, char sep)
 {
     for(auto i : a) { cout<<i<<sep; }
 }
@@ -26,7 +27,8 @@ ll mod_opr(ll num)
     return (num + mod) % mod;
 }
 
-bool compare(ll x, ll y)
+template <typename T>
+bool compare(T x, T y)
 {
     return x > y ? true : false;
 }
@@ -34,6 +36,13 @@ bool compare(ll x, ll y)
 int main()
 {
     fast;
+
+    // Sum of a Vector
+
+    /*
+    vector<ll> x {1,2,3,4,5};
+    cout<<accumulate(x.begin(), x.end(), 0);    // 0 -> Initial Value of Sum
+    */
 
     // Code to Remove Spaces in Between
 
@@ -85,5 +94,24 @@ int main()
     print(vect, sp);
     */
 
-   return 0;
+    // Slicing a Vector -> https://www.geeksforgeeks.org/slicing-a-vector-in-c/?ref=leftbar-rightbar
+    /*
+    vector<int> vect {1,2,3,4,5,6,7};
+    int x  = 2, y = 5;
+    vector<int> answer;
+    answer = vect[slice(x, y - x + 1, 1)];
+    for(auto i : answer){
+        cout<<i<<" ";
+    }
+    */
+
+    // Erase the Duplicate Occurrences in Sorted Vector
+    
+    /*
+    vector<ll> vect {9,10,3,1,2,3,4,5,5,5,6,7};
+    vect.erase(unique(vect.begin(), vect.end()), vect.end()); 
+    print(vect, sp);
+    */
+    
+    return 0;
 }
