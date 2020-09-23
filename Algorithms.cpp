@@ -23,7 +23,7 @@ void print(vector<ll>& a, char sep)
 
 ll mod_opr(ll num)
 {
-    return num % mod;
+    return (num + mod) % mod;
 }
 
 bool compare(ll x, ll y)
@@ -33,6 +33,8 @@ bool compare(ll x, ll y)
 
 int main()
 {
+    fast;
+
     // Code to Remove Spaces in Between
 
     /*
@@ -56,14 +58,32 @@ int main()
     cout<<z;
     */
 
-   // Multiplying a Scaler to the Whole Vector [Using Lambda Function]
+    // Multiplying a Scaler to the Whole Vector [Using Lambda Function]
 
-   /*
-   vector<ll> array {1, 2, 3, 4, 5};
-   ll constant{300};
-   transform(array.begin(), array.end(), array.begin(), [&constant](auto& c) {return c * constant;} );
-   print(array, sp);
-   */
+    /*
+    vector<ll> array {1, 2, 3, 4, 5};
+    ll constant{300};
+    transform(array.begin(), array.end(), array.begin(), [&constant](auto& c) {return c * constant;} );
+    print(array, sp);
+    */
+
+    // Left Rotation of a Vector
+    
+    /*
+    vector<ll> vect {1,2,3,4,5};
+    int leftRotation = 2;
+    rotate(vect.begin(), vect.begin() + leftRotation, vect.end());
+    print(vect, sp);
+    */
+
+    // Right Rotation of a Vector
+
+    /*   
+    vector<ll> vect {1,2,3,4,5};
+    int rightRotation = 2;
+    rotate(vect.begin(), vect.begin() + vect.size() - rightRotation, vect.end());
+    print(vect, sp);
+    */
 
    return 0;
 }
