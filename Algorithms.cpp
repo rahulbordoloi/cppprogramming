@@ -112,6 +112,19 @@ int main()
     vect.erase(unique(vect.begin(), vect.end()), vect.end()); 
     print(vect, sp);
     */
+
+    // Intersection of Two Vectors
+
+    /*
+    vector<ll> a{1,2,3,3,4,9}, b{7,3,9,1,0}, intersection;
+    unordered_set<ll> set(a.begin(), a.end());
+    for(auto i : b){
+        if(set.erase(i) > 0){
+            intersection.pb(i);
+        }
+    }
+    print(intersection, sp);
+    */
     
     return 0;
 }
