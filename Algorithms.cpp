@@ -1,10 +1,11 @@
 #include <bits/stdc++.h>
 
 #define fast ios_base::sync_with_stdio(0);cin.tie(NULL);cout.tie(NULL)
-#define f(i,a,b) for(i=a;i<b;i++)
-#define fi(i,a,b,x) for(i=a;i<b;i=i+x)
-#define fe(i,a,b) for(i=a;i<=b;i++)
-#define fr(i,a,b) for(i=a;i>=b;i--)
+#define f(i,a,b) for(auto i=a;i<b;i++)
+#define fi(i,a,b,x) for(auto i=a;i<b;i=i+x)
+#define fe(i,a,b) for(auto i=a;i<=b;i++)
+#define fr(i,a,b) for(auto i=a;i>=b;i--)
+#define loop(it, a) for(auto it=a.begin();it!=a.end();it++)
 #define endl '\n'
 #define sp '\t'
 #define ll long long int
@@ -12,7 +13,13 @@
 #define ss second
 #define pb push_back
 #define mp make_pair
+#define all(x) x.begin(), x.end()
+#define clr(x) memset(x, 0, sizeof(x))
+#define sortall(x) sort(all(x))
 #define mod 1000000007
+#define PI 3.1415926535897932384626
+#define deb(x) cout<<#x<<"="<<x<<endl
+#define deb2(x, y) cout<<#x<<"="<<x<<","<<#y<<"="<<y<<endl
 
 using namespace std;
 
@@ -124,6 +131,16 @@ int main()
         }
     }
     print(intersection, sp);
+    */
+
+    // Memeset
+
+    /*
+    int a[5];
+    memset(a, 0, sizeof(a));
+    f(i,0,5){
+        cout<<a[i]<<" ";
+    }
     */
     
     return 0;
