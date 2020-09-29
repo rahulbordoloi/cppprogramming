@@ -19,7 +19,7 @@
 #define mod 1000000007
 #define PI 3.1415926535897932384626
 #define deb(x) cout<<#x<<"="<<x<<endl
-#define deb2(x, y) cout<<#x<<"="<<x<<","<<#y<<"="<<y<<endl
+#define deb2(x, y) cout<<#x<<" = "<<x<<","<<#y<<" = "<<y<<endl
 
 using namespace std;
 
@@ -42,6 +42,7 @@ bool compare(T x, T y)
 
 int main()
 {
+
     fast;
 
     // Sum of a Vector
@@ -142,6 +143,69 @@ int main()
         cout<<a[i]<<" ";
     }
     */
+
+    // Iota Algorithm
+
+    /*
+    int a[5] ={0};
+    char c[3] = {0};
+
+    iota(a, a+5, 10);
+    iota(c, c+3, 'a');
+    f(i,0,5){ cout<<a[i]<<" "; }
+    std::cout.write(c, 3);
+    */
+
+    // Copy Elements from one container to other
+
+    /*
+    int source[5] = {1,2,3,4,5};
+    int target[5];
+    copy_n(source, 5, target);
+    f(i,0,5){ cout<<target[i]<<" "; }
+    */
+
+    // Calculate the Number of Digits of a Number
+
+    /*
+    int x = 345;
+    cout<<floor(log10(x)) + 1;
+    */
+
+    // GCD of a Number
+
+    // // cout<<__gcd(50, 10);
+
+    // Swap Two Numbers w/o using a 3rd
+
+    /*
+    ll a = 7, b = 6;
+    deb2(a,b);
+    a ^= b; 
+    b ^= a; 
+    a ^= b;
+    deb2(a,b);
+    */
+
+    // Fast Multiplication
+
+    /*
+    ll n = 16;
+    cout<<(n>>1)<<endl; // Divide by (2^n), here n = 1 
+    cout<<(n<<1)<<endl; // Multiply by (2^n), here n = 1
+    */
+
+    // Even or Odd using Bitwise Operators
     
+    /*
+    int x;
+    cout<<"Enter a Number : ";
+    cin>>x;
+    if((x&1) == 0)    cout<<"Even"<<endl;
+    else    cout<<"Odd";
+    cout<<endl;
+    */
+    
+
     return 0;
 }
