@@ -19,7 +19,7 @@
 #define mod 1000000007
 #define PI 3.1415926535897932384626
 #define deb(x) cout<<#x<<"="<<x<<endl
-#define deb2(x, y) cout<<#x<<"="<<x<<","<<#y<<"="<<y<<endl
+#define deb2(x, y) cout<<#x<<" = "<<x<<","<<#y<<" = "<<y<<endl
 
 using namespace std;
 
