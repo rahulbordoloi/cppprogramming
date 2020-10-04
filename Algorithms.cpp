@@ -174,7 +174,7 @@ int main()
 
     // GCD of a Number
 
-    // // cout<<__gcd(50, 10);
+    //cout<<__gcd(50, 10);
 
     // Swap Two Numbers w/o using a 3rd
 
@@ -205,7 +205,14 @@ int main()
     else    cout<<"Odd";
     cout<<endl;
     */
+
+    // Integer Vector to String
     
+    vector<int> arr{1,2,3,4,5,6};
+	std::stringstream newstr;
+	for(auto value: arr){ newstr<<value; }
+	string result = newstr.str();
+	cout<<result;
 
     return 0;
 }
