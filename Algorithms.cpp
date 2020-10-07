@@ -208,11 +208,23 @@ int main()
 
     // Integer Vector to String
     
+    /*
     vector<int> arr{1,2,3,4,5,6};
 	std::stringstream newstr;
 	for(auto value: arr){ newstr<<value; }
 	string result = newstr.str();
 	cout<<result;
+    */
 
+    // Split a String into Vectors
+
+    /*
+    string s = "Rahul Bordoloi    King";
+    vector<string> result;
+    istringstream iss(s);
+    for(string s; iss>>s; ){ result.push_back(s); }
+	print(result, sp);
+    */
+   
     return 0;
 }
