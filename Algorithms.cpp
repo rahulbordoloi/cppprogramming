@@ -67,7 +67,7 @@ int main()
     // Append Repeatation of a String by its Frequency
    
     /*
-    string s = "R7h9L5";8+ hona 
+    string s = "R7h9L5"; 
     string answer;
     fi(i, 0, s.size(), 2){
        answer.insert(answer.end(), (int)(s[i + 1] - '0'), s[i]);
@@ -224,6 +224,14 @@ int main()
     istringstream iss(s);
     for(string s; iss>>s; ){ result.push_back(s); }
 	print(result, sp);
+    */
+
+    // Slicing a String in C++
+
+    /*
+    string s = "Rahul Bordoloi";
+    cout<<s.substr(6)<<endl;
+    cout<<s.substr(3, 9)<<endl;
     */
    
     return 0;
