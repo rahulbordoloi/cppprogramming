@@ -42,7 +42,18 @@ bool compare(T x, T y)
 
 int main()
 {
+
+    // ONLINE_JUDGE
+    #ifndef rahulbordoloi
+        freopen("input.txt", "r", stdin);
+        // freopen("output.txt", "w", stdin);
+    #endif
+
+    // Code
     fast;
     cout<<"Hello World"<<endl;
+
+    // cerr<<"TIME : "<<clock()<<endl;
     return 0;
+
 }
