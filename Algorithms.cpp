@@ -40,6 +40,11 @@ bool compare(T x, T y)
     return x > y ? true : false;
 }
 
+bool pair_Compare(const pair<int, int>&a, const pair<int, int>&b)
+{
+   return a.second < b.second;
+}
+
 int main()
 {
 
@@ -232,6 +237,18 @@ int main()
     string s = "Rahul Bordoloi";
     cout<<s.substr(6)<<endl;
     cout<<s.substr(3, 9)<<endl;
+    */
+    
+    // Max Occuring Element in a C++ Map.
+
+    /*
+    map<int, int> Map;
+    Map[100] = 7;
+    Map[200] = 9;
+    Map[300] = 1;
+
+    cout<<"Key : "<<max_element(Map.begin(), Map.end(), pair_Compare)->ff<<endl;
+    cout<<"Value : "<<max_element(Map.begin(), Map.end(), pair_Compare)->ss<<endl;
     */
    
     return 0;
