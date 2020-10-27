@@ -250,6 +250,34 @@ int main()
     cout<<"Key : "<<max_element(Map.begin(), Map.end(), pair_Compare)->ff<<endl;
     cout<<"Value : "<<max_element(Map.begin(), Map.end(), pair_Compare)->ss<<endl;
     */
-   
+
+    // Convert a Decimal into Binary in C++
+    
+    
+    int n;
+    cin>>n;
+    string binary = bitset<8>(n).to_string();
+    cout<<"Raw Binary String : "<<binary<<endl;
+    // Finding the First Occurence of '1' to Strip-Off Leading Zeroes.
+    const static auto loc1 = binary.find('1');            
+    if(loc1 != string::npos) 
+        cout<<"Stripping : "<<binary.substr(loc1)<<endl;
+    cout<<"Integer : "<<stoi(binary)<<endl;
+    
+
+    // Check out the Datatype of a Variable in C++
+
+    /*
+    int x = 8;
+    cout<<"Integer : "<<typeid(x).name()<<endl;
+    cout<<"Float : "<<typeid((float)x).name()<<endl;
+    cout<<"Long Long : "<<typeid((ll)x).name()<<endl;
+    cout<<"Double : "<<typeid((double)x).name()<<endl;
+    cout<<"Short : "<<typeid((short)x).name()<<endl;
+    cout<<"Char : "<<typeid((char)x).name()<<endl;
+    cout<<"String : "<<typeid(to_string(x)).name()<<endl;
+    */
+    
+    cerr<<"TIME : "<<(float)clock() / CLOCKS_PER_SEC<<" seconds"<<endl;
     return 0;
 }
